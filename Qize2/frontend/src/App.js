@@ -7,7 +7,7 @@ const App = () => {
   const navigation = useNavigate();
   useEffect(() => {
     axios({
-      method: "post",
+      method: "get",
       url: "/",
       data: {
         id: uId,
