@@ -100,8 +100,8 @@ export default class Home extends Component {
     constructor(props) {
       super();
       this.state = {
-        message: "",
-        message2: "",
+        mess: "",
+        mess2: "",
       };
     }
   
@@ -135,7 +135,7 @@ events
 */
 import React, { useState } from "react";
 
-export default function Exam() {
+export default function App() {
   const [insideInput, setInsideInput] = useState("");
 
   return (
