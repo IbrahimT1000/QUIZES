@@ -2,17 +2,24 @@
 
 /* 1-create a function longestWord that returns the longest word in a sentence */
 
-const longestWord = function(str){
-    let strSplit = str.split(' ');
-    let longestWord = 0;
-    for(let i = 0; i < strSplit.length; i++){
-      if(strSplit[i].length > longestWord){
-      longestWord = strSplit[i].length;
-       }
+function longestWord(str) {
+
+  var arr = str.split(' ');
+
+  var max = 0;
+
+  for (var i = 0; i < arr.length; i++) {
+    var valStr = arr[i].length;
+
+    if (valStr > max) {
+      max = valStr;
     }
-    return longestWord;
   }
-    console.log(longestWord("we love cats","time dog cat"));
+  return max;
+}
+
+longestWord("we love cats","time dog cat");
+
     
 
 /* 
